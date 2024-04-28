@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HowmuchSaved">
+
+
+    <Button
+        android:id="@+id/boardButton"
+        android:layout_marginTop="675dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="-1200dp"
+        android:layout_marginLeft="180dp"
+        android:layout_weight="1"
+        android:text="Board" />
+
+    <Button
+        android:id="@+id/stockButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="800dp"
+        android:layout_marginTop="675dp"
+        android:layout_marginRight="-160dp"
+        android:layout_weight="1"
+        android:text="Stocks" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView2"
+        android:name="com.example.savingapp.StockFragment"
+        android:layout_width="270dp"
+        android:layout_height="677dp"
+        android:layout_weight="1" />
+</LinearLayout>
